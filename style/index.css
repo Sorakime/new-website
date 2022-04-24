@@ -1,0 +1,104 @@
+main > * {
+  padding: 50px;
+}
+
+
+/* top */
+main > #top {
+  background-color: #f6f6f6;
+  aspect-ratio: 5/1;
+  position: relative;
+  overflow: hidden;
+}
+#top::before {
+  content: '';
+  position: absolute;
+  left: -5px;
+  right: -5px;
+  top: -5px;
+  bottom: -5px;
+  width: calc(100% + 10px);
+  height: calc(100% + 10px);
+  background-image: url('/image/header.jpg');
+  background-position: center;
+  background-size: cover;
+  filter: blur(10px);
+}
+#top > h1 {
+  position: absolute;
+  display: inline-block;
+  left: 50%;
+  top: 50%;
+  font-size: 40px;
+  text-align: center;
+  font-weight: 100;
+  transform: translate(-50%, -50%);
+}
+
+
+/* skill */
+#skill > h2 {
+  text-align: center;
+}
+#skill > hr {
+  height: 1px;
+  background-color: #c4c4c4;
+  margin: 20px 0;
+}
+
+#skill-programming-detail > .one-skill-programming,
+#skill-other-detail > .one-skill-other {
+  display: flex;
+  line-height: 2rem;
+}
+.one-skill-programming > *,
+.one-skill-other > * {
+  width: 100%;
+}
+.one-skill-programming > .skill-programming-bar,
+.one-skill-other > .skill-other-bar {
+  margin: .25rem 0;
+  height: 1.5rem;
+  position: relative;
+}
+.one-skill-programming > .skill-programming-bar::before,
+.one-skill-other > .skill-other-bar::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  height: 100%;
+  width: 100%;
+  border-radius: 0 10px 10px 0;
+}
+
+/* skil - programming */
+.front-end > .skill-programming-bar::before {
+  background: linear-gradient(to right,#69a2bb, #b4e4ff);
+}
+.desktop-app > .skill-programming-bar::before {
+  background: linear-gradient(to right, #6d8388, #bff4ff);
+  width: 85%;
+}
+.server-side > .skill-programming-bar::before {
+  background: linear-gradient(to right, #c4c4c4, #8fe8ff);
+  width: 65%;
+}
+
+/* skill - other */
+.ui-design > .skill-other-bar::before {
+  background: linear-gradient(to right, #319141, #00ff85);
+}
+.image-create > .skill-other-bar::before {
+  background: linear-gradient(to right, #708c89, #35cb00);
+  width: 95%;
+}
+.movie-edit > .skill-other-bar::before {
+  background: linear-gradient(to right, #4db58f, #8fffd7);
+  width: 40%;
+}
+.dtm > .skill-other-bar::before {
+  background: linear-gradient(to right, #41cc88, #58faab);
+  width: 25%;
+}
