@@ -25,7 +25,7 @@ header {
   width: 100%;
   height: auto;
 	padding: 10px;
-	background-color: var(--back-main);
+	background-color: #efefefaa;
 	backdrop-filter: blur(15px);
 	-webkit-backdrop-filter: blur(15px);
 	box-shadow: 0 0 15px #0003;
@@ -54,4 +54,11 @@ h2 {
 }
 h3 {
   font-size: 25px;
+}
+h3 > a {
+  font-weight: 400;
+}
+a {
+  font-size: inherit;
+  color: #40887f;
 }

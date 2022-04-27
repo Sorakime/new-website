@@ -1,7 +1,9 @@
 main > * {
   padding: 50px;
 }
-
+main > * > h2 {
+  text-align: center;
+}
 
 /* top */
 main > #top {
@@ -37,9 +39,6 @@ main > #top {
 
 
 /* skill */
-#skill > h2 {
-  text-align: center;
-}
 #skill > hr {
   height: 1px;
   background-color: #c4c4c4;
@@ -57,8 +56,8 @@ main > #top {
 }
 .one-skill-programming > .skill-programming-bar,
 .one-skill-other > .skill-other-bar {
-  margin: .25rem 0;
-  height: 1.5rem;
+  margin: .5rem 0;
+  height: 1rem;
   position: relative;
 }
 .one-skill-programming > .skill-programming-bar::before,
@@ -101,4 +100,68 @@ main > #top {
 .dtm > .skill-other-bar::before {
   background: linear-gradient(to right, #41cc88, #58faab);
   width: 25%;
+}
+
+
+/* sns */
+main > #sns {
+  background-color: #fff;
+}
+#sns > div {
+  margin-bottom: 15px;
+}
+
+
+/* belong to */
+main > #belong-to {
+  background-color: #ccc;
+}
+#belong-to > div {
+  margin-bottom: 15px;
+}
+* > .belong-detail {
+  height: 4rem;
+  display: flex;
+}
+* > .belong-detail::before {
+  content: '';
+  height: 100%;
+  aspect-ratio: 1 / 1;
+  background-size: 80%;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.belong-detail > h3 {
+  font-size: 1.5rem;
+  margin: .75rem 0;
+}
+
+/* belong to - thinking */
+#belong-thinking > .belong-detail::before {
+  background-image: url('/image/thinking.svg');
+}
+
+/* belong to - monochrome. */
+#belong-mncr > .belong-detail::before {
+  background-image: url('https://www.monochrome.tk/mncr/images/logo.png');
+}
+
+/* belong-to - VCborn */
+#belong-vcborn > .belong-detail::before {
+  background-image: url('https://vcborn.com/favicon.ico');
+}
+
+/* belong-to - LiquidVerse */
+#belong-liquid > .belong-detail::before {
+  background-image: url('https://liquidverse.github.io/img/logo/v1.png');
+}
+
+/* belong-to - LiquidVerse */
+#belong-liquid > .belong-detail::before {
+  background-image: url('https://liquidverse.github.io/img/logo/v1.png');
+}
+
+/* belong-to - escape */
+#belong-esc > .belong-detail::before {
+  background-image: url('https://pbs.twimg.com/profile_images/1440650597435199491/Vvay5HW1_400x400.jpg');
 }
