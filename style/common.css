@@ -62,3 +62,8 @@ a {
   font-size: inherit;
   color: #40887f;
 }
+
+footer {
+  text-align: center;
+  background-color: #efefef;
+}

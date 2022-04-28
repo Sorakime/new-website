@@ -10,6 +10,9 @@ window.onload = () => {
       <a href="https://sorakime.theblog.me" id="header-blog">Blog</a>
     </header>
 		${document.body.innerHTML}
+    <footer>
+      <small>Copyright &copy; 2022 Sorakime All rights reserved.</small>
+    </footer>
 	`;
   switch (location.pathname) {
     case '/':
@@ -21,7 +24,5 @@ window.onload = () => {
     case '/blog':
       document.getElementById('header-blog').setAttribute('class', 'selected');
       break;
-    default:
-      console.log(location);
   };
 };

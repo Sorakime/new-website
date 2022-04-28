@@ -165,3 +165,63 @@ main > #belong-to {
 #belong-esc > .belong-detail::before {
   background-image: url('https://pbs.twimg.com/profile_images/1440650597435199491/Vvay5HW1_400x400.jpg');
 }
+
+
+/* introduction */
+#introduction {
+  background-color: #f3f3f3;
+}
+
+
+/* equipment */
+#equipment {
+  background-color: #ddd;
+}
+.equipments {
+  margin-bottom: 15px;
+}
+.equipments > .one-equipment {
+  display: flex;
+  min-height: 100px;
+  margin-bottom: 15px;
+}
+.one-equipment > .one-equipment-image {
+  height: 100px;
+  aspect-ratio: 1/1;
+  border-radius: 5px;
+  background-size: cover;
+  background-position: center;
+}
+.one-equipment > .one-equipment-detail {
+  margin-left: 30px;
+}
+
+/* equipment - MacBook Pro */
+.one-equipment-macbook-pro > .one-equipment-image {
+  background-image: url('/image/macbook-pro.jpg');
+}
+
+/* equipment - MacBook Air */
+.one-equipment-macbook-air > .one-equipment-image {
+  background-image: url('/image/macbook-air.jpg');
+}
+
+/* equipment - iMac */
+.one-equipment-imac > .one-equipment-image {
+  background-image: url('/image/imac.jpg');
+}
+
+/* equipment - Pavilion */
+.one-equipment-pavilion > .one-equipment-image {
+  background-image: url('/image/pavilion.jpg');
+}
+
+/* equipment - Vaio */
+.one-equipment-vaio > .one-equipment-image {
+  background-image: url('https://pbs.twimg.com/profile_images/1456015865095548928/-5jwvI8s_400x400.jpg');
+}
+
+/* equipment - Inspiron */
+.one-equipment-inspiron > .one-equipment-image {
+  background-image: url('/image/inspiron.jpg');
+}
