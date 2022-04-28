@@ -225,3 +225,13 @@ main > #belong-to {
 .one-equipment-inspiron > .one-equipment-image {
   background-image: url('/image/inspiron.jpg');
 }
+
+/* equipment - Inspiron */
+.one-equipment-iphone7 > .one-equipment-image {
+  background-image: url('/image/iphone7.jpg');
+}
+
+/* equipment - Inspiron */
+.one-equipment-redmi9t > .one-equipment-image {
+  background-image: url('/image/redmi9t.jpg');
+}
